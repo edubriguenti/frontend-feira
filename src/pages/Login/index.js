@@ -38,7 +38,7 @@ function Login() {
         <Input
           type="number"
           value={saldo}
-          onChange={event => setSaldo(event.target.value)}
+          onChange={event => setSaldo(Number(event.target.value))}
           startAdornment={
             <InputAdornment position="start">
               R$
